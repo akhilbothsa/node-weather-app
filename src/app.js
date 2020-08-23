@@ -4,6 +4,8 @@ const express = require('express');
 const geoCode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 const app = express();
+const port = process.env.PORT || 3000
+
 
 // Define path for express directories
 const publicDirectory = path.join(__dirname, '../public')
@@ -26,7 +28,7 @@ app.get('', (req, response)=>{
     })
 })
 
-app.listen(4500, ()=>{
+app.listen(port, ()=>{
     console.log('Server Started')
 })
 

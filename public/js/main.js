@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (e) => {
 
     let searchValue = search.value;
 
-    fetch(`http://localhost:4500/weather?address=${searchValue}`).
+    fetch(`/weather?address=${searchValue}`).
         then(response => response.json().
             then(data => {
                 // let imageEle = document.createElement('img')
