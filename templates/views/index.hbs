@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+
+<body>
+    <div class="header-content">
+        {{>header}}
+        <p>Created By {{name}}</p>
+
+        <form>
+            <input type="text" placeholder="Location">
+            <button type="submit">Search</button>
+        </form>
+        
+        <p id="location-details"></p>
+    </div>
+
+
+
+    {{>footer}}
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
